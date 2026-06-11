@@ -1,4 +1,4 @@
-:root {
+  :root {
   --bg: white;
   --primary: #050340;
   --secondary: #e5e510;
@@ -75,7 +75,7 @@ body {
 }
 /* Profil */
 .profil {
-  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url(https://miro.medium.com/v2/resize:fit:1024/1*kveavuUXvLQyMBL1no9l3Q.jpeg);
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url(../Foto/background.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
@@ -85,18 +85,20 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .profil .img {
-  margin-right: 2rem;
   margin-bottom: 3rem;
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-end;
 }
 .profil .text{
-  margin-right: auto;
   margin-bottom: 3rem;
   text-align: left;
   display: block;
+  flex: 1 1 50%;
 }
 .profil .text h1 {
   color:var(--secondary);
@@ -114,8 +116,11 @@ body {
 }
 
 .profil .img img {
-  width:40vh ;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   border-radius: 3rem;
+  object-fit: cover;
 }
 
 /* About */
@@ -164,10 +169,11 @@ border-radius:0.8rem;
   padding-bottom: 2rem;
 }
     /* Fotografi */
-.row {
+.row, .row1 {
   background-color: var(--secondary);
   border-radius:0.8rem;
   padding: 2rem 1rem;
+  margin-top: 3rem;
 }
 .photography{ 
  display: flex;
@@ -175,7 +181,7 @@ border-radius:0.8rem;
   flex-wrap: wrap;  
   justify-content:space-around;
 }
-.row h3{
+.row h3, .row1 h3{
   text-align: center;
   font-size: 2rem;
   padding:2rem 0rem;
@@ -197,6 +203,7 @@ border-radius:0.8rem;
 }
 .row2{
   padding: 2rem 1rem;
+  margin-top: 3rem;
 }
 .row2 h3 {
   text-align: center;
@@ -374,8 +381,15 @@ color:#4173cb;
   .profil {
     display: flex;
     justify-content: center;
+    text-align: center;
   }
-  .row {
+  .profil .img {
+    justify-content: center;
+  }
+  .profil .text {
+    text-align: center;
+  }
+  .row, .row1 {
   font-size: 1.5rem;
   }
   .about .konten .text  {
