@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tobi's Porto</title>
     <!-- script -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +29,7 @@
             <a href="#contact">Contact</a>
         </div>
         <div class="navbar-extra">
-            <a href="#" onclick="return false" id="menu"><i data-feather="menu"></i></a>
+            <a href="#" onclick="return false" id="menu"><i class="ph ph-list" style="font-size: 28px;"></i></a>
         </div>
     </section>
 
@@ -37,52 +37,145 @@
     <section id="profil" class="profil">
         <div class="text">
             <h1>Tobias Don Bosco</h1>
-            <p>The man who can help you become a content creator!</p>
+            <p>Student,Data enthusiast & Video Editor</p>
+            <div class="social">
+                <div class="logo-ig">
+                    <div class="logo"><a href="https://www.instagram.com/penangkapcahaya.id/" target="_blank"><i class="ph ph-instagram-logo" style="font-size: 32px;"></i></a>
+                    </div>
+                </div>
+                <div class="logo-github">
+                    <div class="logo"><a href="https://github.com/tobiasdonb" target="_blank"><i class="ph ph-github-logo" style="font-size: 32px;"></i></a></div>
+                </div>
+                <div class="logo-email">
+                    <div class="logo"><a href="mailto:tobiasprogrammer@gmail.com"><i class="ph ph-envelope" style="font-size: 32px;"></i></a></div>
+                </div>
+                <div class="logo-linkedin">
+                    <div class="logo"><a href="https://www.linkedin.com/in/tobias-don-bosco-5b0881294" target="_blank"><i class="ph ph-linkedin-logo" style="font-size: 32px;"></i></a></div>
+                </div>
+            </div>
         </div>
         <div class="img">
             <img src="Foto/profile.jpeg" alt="Foto">
-        </div>
         </div>
     </section>
     <!-- About -->
     <section id="about" class="about" data-aos="fade-up" data-aos-duration="1000">
         <h2>About<span> Me </span></h2>
         <div class="konten">
-            <img src="/Foto/about.jpg" alt="Foto profil">
             <div class="text">
                 <p>Hey there, I'm <span>Tobias Don Bosco</span>, but you can call me <span>Tobi.</span> I live in the
                     vibrant city of <span>Denpasar, Bali</span> , my home. I've been
-                    <span>capturing life's moments through the lens since 2019</span>, diving deep into the worlds of
-                    photography and videography.
+                    <span>capturing life's moments through the lens since 2019</span>
                     But I'm not one to rest on my laurels, I'm currently on an <span>exciting journey to master anything about IT especially data science, delving into data science and machine learning since 2025.</span>
                     With an eye for the extraordinary and a passion for creative tech, I'm ready to bring a fresh perspective
                     to your team. Let's craft some digital magic together!</p>
             </div>
-
+            <img src="/Foto/about.jpg" alt="Foto profil">
         </div>
     </section>
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio" data-aos="fade-up" data-aos-duration="1000">
-        <h2>Some of <span> My Portofolio</span></h2>
+    <section id="portfolio" class="portfolio">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Some of <span> My Portofolio</span></h2>
  
-        <div id="row-it-portfolio" data-aos="fade-up" data-aos-duration="1000" style="margin-top: 3rem;">
-            <h3 style="text-align: center; font-size: 2rem; padding: 2rem 0; color: var(--primary);">YOLO Kidney Detection</h3>
-            <div class="konten" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem; padding: 1rem;">
-                <div style="flex: 1 1 300px; display: flex; justify-content: center;">
-                    <img src="Foto/yolo_kidneystone.png" alt="YOLO Kidney Detection" style="width: 100%; max-width: 400px; height: auto; border-radius: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.2); object-fit: cover;">
+
+        <div class="row-it-portfolio">
+            <div class="konten" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img-wrapper-yolo">
+                    <img src="Foto/yolo_kidneystone.png" alt="YOLO Kidney Detection">
                 </div>
-                <div class="text" style="flex: 1 1 400px; background-color: var(--secondary); padding: 2rem; border-radius: 0.8rem;">
-                    <p style="text-align: justify; font-size: 1.2rem; line-height: 1.6;">This project introduces a comprehensive, web-based diagnostic system employing the YOLO architecture for the automated detection of kidney stones. Beyond training the detection algorithm, I engineered a custom web application to serve as the deployment environment, facilitating seamless user interaction. The model exhibits strong empirical results, yielding a Mean Average Precision (mAP) at 0.5 IoU of 77.5% alongside a Recall rate of 76.2%.</p>
+                <div class="text-wrapper">
+                    <h3>YOLO Kidney Detection</h3>
+                    <div class="text">
+                        <p>This project introduces a comprehensive, web-based diagnostic system employing the YOLO architecture for the automated detection of kidney stones. Beyond training the detection algorithm, I engineered a custom web application to serve as the deployment environment, facilitating seamless user interaction. The model exhibits strong empirical results, yielding a Mean Average Precision (mAP) at 0.5 IoU of 77.5% alongside a Recall rate of 76.2%.</p>
+                        <div class="portfolio-links">
+                            <a href="https://yolo-kidney-stone-1.onrender.com" target="_blank" class="btn-link">Link</a>
+                            <a href="https://github.com/tobiasdonb/yolo_kidney_stone" target="_blank" class="btn-github"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="rowphoto" style="text-align: center; margin-top: 3rem;">
-            <h3 style="font-size: 2rem; padding: 2rem 0; color: var(--primary);">Photography</h3>
-            <p style="padding-bottom: 2rem;">This is all my photos taken by different cameras</p>
+
+        <div class="row-it-portfolio">
+            <div class="konten" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img-wrapper-rice">
+                    <img src="Foto/result.jpeg" alt="Rice Paddy Classification">
+                </div>
+                <div class="text-wrapper">
+                    <h3>Rice Paddy Classification</h3>
+                    <div class="text">
+                        <p>I trained a Convolutional Neural Network, or CNN, to accurately classify eight of the most common rice plant diseases. To make this technology directly accessible to users, I deployed the model into a mobile application, which I developed using the Flutter framework. This allows for quick, on-the-go disease detection right from a smartphone.</p>
+                        <div class="portfolio-links">
+                            <a href="https://drive.google.com/drive/folders/1MqjbaLT2dLAdsuxbqsdo3d9zuNchr1cH" target="_blank" class="btn-link">Link</a>
+                            <a href="https://github.com/tobiasdonb/RiceDiseasesCNN" target="_blank" class="btn-github"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row1">
-            <div class="photography">
-                <div class="post1">
+
+        <div class="row-it-portfolio">
+            <div class="konten" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img-wrapper-billiard">
+                    <img src="Foto/BILLIARD_MATCHMAKING_SYSTEM.png" alt="Billiard Matchmaking System">
+                    <img src="Foto/billiard_web.png" alt="Billiard Matchmaking Web Interface">
+                </div>
+                <div class="text-wrapper">
+                    <h3>Billiard Matchmaking System</h3>
+                    <div class="text">
+                        <p>This project introduces a comprehensive system for billiard matchmaking. It features a robust matchmaking system to be able play in 1 table with your friends. </p>
+                        <div class="portfolio-links">
+                            <a href="https://tobiasdonb.github.io/billiardmatch/BilliardRoundMaker.html" target="_blank" class="btn-link">Link</a>
+                            <a href="https://github.com/tobiasdonb/billiardmatch" target="_blank" class="btn-github"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-it-portfolio">
+            <div class="konten" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img-wrapper-web">
+                    <img src="Foto/web_personal.png" alt="Personal Portfolio Website">
+                </div>
+                <div class="text-wrapper">
+                    <h3>Personal Portfolio Website</h3>
+                    <div class="text">
+                        <p>This very website! A fully responsive personal portfolio built from scratch using HTML, CSS, and Vanilla JavaScript. It features modern UI/UX design principles, smooth scroll animations, and a dynamic layout to showcase my Machine learning,photography, videography, and content creating projects </p>
+                        <div class="portfolio-links">
+                            <a href="https://tobiasdonb.github.io/" target="_blank" class="btn-link">Link</a>
+                            <a href="https://github.com/tobiasdonb/tobiasdonb.github.io" target="_blank" class="btn-github"><i class="ph ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-it-portfolio">
+            <div class="konten" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img-wrapper-tiktok">
+                    <img src="Foto/tiktok.jpeg" alt="TikTok Statistics Content">
+                </div>
+                <div class="text-wrapper">
+                    <h3>TikTok Educational Content</h3>
+                    <div class="text">
+                        <p>I create engaging and easy-to-understand educational content on TikTok, focusing on basic statistics and data analysis. The goal is to make complex mathematical concepts accessible to everyone, helping students and data enthusiasts grasp fundamental statistical methods through short, interactive video lessons.</p>
+                        <div class="portfolio-links">
+                            <a href="https://vt.tiktok.com/ZSQ59qLER" target="_blank" class="btn-link">Watch on TikTok</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row1" id="rowphoto" data-aos="fade-up" data-aos-duration="1000">
+            <h3>Photography</h3>
+            <p>This is all my photos taken by different cameras</p>
+            <div class="photography-slider-wrapper">
+                <button class="slide-btn prev-btn" id="prevBtn"><i class="ph ph-caret-left" style="font-size: 24px;"></i></button>
+                <div class="photography-track-container">
+                    <div class="photography" id="photoTrack">
+                        <div class="post1">
                     <blockquote class="instagram-media" data-instgrm-captioned
                         data-instgrm-permalink="https://www.instagram.com/p/Ct6d6pbrNQS/?utm_source=ig_embed&amp;utm_campaign=loading"
                         data-instgrm-version="14"
@@ -466,6 +559,9 @@
                     </blockquote>
                     <script async src="//www.instagram.com/embed.js"></script>
                 </div>
+                    </div>
+                </div>
+                <button class="slide-btn next-btn" id="nextBtn"><i class="ph ph-caret-right" style="font-size: 24px;"></i></button>
             </div>
             <div class="tombol">
                 <a href="https://www.instagram.com/penangkapcahaya.id/" target="_blank" class="cta">View More</a>
@@ -586,16 +682,28 @@
 
     <!-- Kontak -->
     <section id="contact" class="contact" data-aos="flip-left" data-aos-duration="1000">
-        <h2>My <span>CV</span></h2>
+        <h2><span>Contact</span></h2>
         <div class="row">
             <div class="kolom">
                 <div class="tombol-cv">
-                    <a href="Foto/CV_Tobias Don Bosco.jpg" download>
-                        Download my cv here
+                    <a href="Foto/CV_TobiasDonBosco_ITBSTIKOMBALI_Eng.pdf" download>
+                        Resume
                     </a>
                 </div>
-                <div class="input-group">
-                    <a href="mailto:tobiasprogrammer@gmail.com">Interesting to work together? Email here!!</a>
+                <div class="social">
+                    <div class="logo-ig">
+                        <div class="logo"><a href="https://www.instagram.com/penangkapcahaya.id/" target="_blank"><i class="ph ph-instagram-logo" style="font-size: 32px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="logo-github">
+                        <div class="logo"><a href="https://github.com/tobiasdonb" target="_blank"><i class="ph ph-github-logo" style="font-size: 32px;"></i></a></div>
+                    </div>
+                    <div class="logo-email">
+                        <div class="logo"><a href="mailto:tobiasprogrammer@gmail.com"><i class="ph ph-envelope" style="font-size: 32px;"></i></a></div>
+                    </div>
+                    <div class="logo-linkedin">
+                        <div class="logo"><a href="https://www.linkedin.com/in/tobias-don-bosco-5b0881294" target="_blank"><i class="ph ph-linkedin-logo" style="font-size: 32px;"></i></a></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -604,39 +712,11 @@
     <!-- footer -->
     <div class="footer" id="footer">
         <div class="container">
-            <div class="social">
-                <h2>Socials</h2>
-                <div class="logo-ig">
-                    <div class="logo"><a href="https://www.instagram.com/penangkapcahaya.id/"
-                            data-feather="instagram"></a>
-                    </div>
-                    <div class="caption"><a target="_blank"
-                            href="https://www.instagram.com/penangkapcahaya.id/">Instagram</a>
-                    </div>
-                </div>
-                <div class="logo-github">
-                    <div class="logo"><a href="https://github.com/tobiasdonb" data-feather="github"></a></div>
-                    <div class="caption"><a target="_blank" href="https://github.com/tobiasdonb">Github</a></div>
-                </div>
-            </div>
-            <div class="kapabilitas">
-                <h2>Capability</h2>
-                <a href="#portfolio">Photography</a>
-                <br>
-                <a href="#rowvideo">Videography</a>
-                <br>
-                <a href="#" onclick="return false">HTML, CSS,Javascript</a>
-            </div>
-        </div>
-        <hr>
         <div class="copyright">
             <p>© 2023 Tobias Don Bosco, All Rights Reserved</p>
         </div>
     </div>
-    <!-- feather icons -->
-    <script>
-        feather.replace();
-    </script>
+    <!-- Icons are now provided by Phosphor Icons -->
 
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
